@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="wad.jobs.JobsTest" time="2.001" tests="4" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs"/>
+    <property name="java.runtime.version" value="1.8.0_111-8u111-b14-2ubuntu0.16.04.2-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/home/pieta/.netbeans/8.1/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/home/pieta/.netbeans/8.1/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/bin/../jre/lib/amd64:/usr/lib/jvm/java-8-openjdk-amd64/bin/../jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-47-generic"/>
+    <property name="user.home" value="/home/pieta"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="pieta"/>
+    <property name="java.class.path" value="/home/pieta/.netbeans/8.1/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/pieta/.netbeans/8.1/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/pieta/.netbeans/8.1/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="canAddMultipleJobs" classname="wad.jobs.JobsTest" time="1.583">
+    <error message="No element is displayed or enabled. Can&apos;t set a new value.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;STELLINA&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-47-generic&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'STELLINA', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-47-generic', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.fluentlenium.core.domain.FluentListImpl.text(FluentListImpl.java:78)
+	at org.fluentlenium.core.action.FillConstructor.with(FillConstructor.java:39)
+	at wad.jobs.JobsTest.addJob(JobsTest.java:94)
+	at wad.jobs.JobsTest.lambda$addJobs$3(JobsTest.java:85)
+</error>
+    <system-out><![CDATA[13:42:29.773 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class wad.jobs.JobsTest]
+13:42:29.801 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:42:29.830 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:42:29.880 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [wad.jobs.JobsTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:42:29.926 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [wad.jobs.JobsTest], using SpringBootContextLoader
+13:42:29.939 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [wad.jobs.JobsTest]: class path resource [wad/jobs/JobsTest-context.xml] does not exist
+13:42:29.941 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [wad.jobs.JobsTest]: class path resource [wad/jobs/JobsTestContext.groovy] does not exist
+13:42:29.941 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wad.jobs.JobsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:42:29.946 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [wad.jobs.JobsTest]: JobsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:42:30.046 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [wad.jobs.JobsTest]
+13:42:30.195 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+13:42:30.198 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+13:42:30.199 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+13:42:30.223 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [wad/jobs/] to resources [URL [file:/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/test-classes/wad/jobs/], URL [file:/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/classes/wad/jobs/]]
+13:42:30.224 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/test-classes/wad/jobs]
+13:42:30.225 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/test-classes/wad/jobs] for files matching pattern [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/test-classes/wad/jobs/*.class]
+13:42:30.231 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/classes/wad/jobs]
+13:42:30.232 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/classes/wad/jobs] for files matching pattern [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/classes/wad/jobs/*.class]
+13:42:30.233 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:wad/jobs/*.class] to resources [file [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/test-classes/wad/jobs/JobsTest.class], file [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/classes/wad/jobs/JobController.class], file [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/classes/wad/jobs/JobsApplication.class]]
+13:42:30.463 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs/target/classes/wad/jobs/JobsApplication.class]
+13:42:30.467 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration wad.jobs.JobsApplication for test class wad.jobs.JobsTest
+13:42:30.478 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [wad.jobs.JobsTest]: using defaults.
+13:42:30.491 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+13:42:30.545 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b26e945, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63a65a25, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@54c562f7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@318ba8c8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6dbb137d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9d0b9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@43301423, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f112965, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1a04f701, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e91d63f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@d4342c2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2bbf180e]
+13:42:30.553 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [wad.jobs.JobsTest]
+13:42:30.555 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [wad.jobs.JobsTest]
+13:42:30.578 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class wad.jobs.JobsTest]
+13:42:30.579 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:42:30.580 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:42:30.582 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [wad.jobs.JobsTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:42:30.584 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [wad.jobs.JobsTest], using SpringBootContextLoader
+13:42:30.586 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [wad.jobs.JobsTest]: class path resource [wad/jobs/JobsTest-context.xml] does not exist
+13:42:30.588 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [wad.jobs.JobsTest]: class path resource [wad/jobs/JobsTestContext.groovy] does not exist
+13:42:30.589 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wad.jobs.JobsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:42:30.590 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [wad.jobs.JobsTest]: JobsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:42:30.603 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [wad.jobs.JobsTest]
+13:42:30.606 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+13:42:30.607 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+13:42:30.608 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+13:42:30.609 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration wad.jobs.JobsApplication for test class wad.jobs.JobsTest
+13:42:30.615 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [wad.jobs.JobsTest]: using defaults.
+13:42:30.622 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+13:42:30.630 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@35047d03, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@49b0b76, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@769f71a9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c9f8c13, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5ae50ce6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6f96c77, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@be64738, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3ba9ad43, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@49d904ec, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@48e4374, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3d680b5a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4b5d6a01]
+13:42:30.633 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [wad.jobs.JobsTest]
+13:42:30.634 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [wad.jobs.JobsTest]
+13:42:30.636 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [wad.jobs.JobsTest]
+13:42:30.637 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [wad.jobs.JobsTest]
+13:42:30.647 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5a63f509 testClass = JobsTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6e4784bc testClass = JobsTest, locations = '{}', classes = '{class wad.jobs.JobsApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@7ce6a65d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@29b5cd00, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@69b0fd6f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+13:42:30.651 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [wad.jobs.JobsTest]
+13:42:30.652 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [wad.jobs.JobsTest]
+13:42:32.647 [main] DEBUG com.gargoylesoftware.htmlunit.WebClient - Get page for window named '', using WebRequest[<url="about:blank", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+13:42:32.714 [main] DEBUG com.gargoylesoftware.htmlunit.WebWindowImpl - setEnclosedPage: HtmlPage(about:blank)@1491860739
+13:42:32.715 [main] DEBUG com.gargoylesoftware.htmlunit.WebWindowImpl - destroyChildren
+13:42:33.020 [main] DEBUG com.gargoylesoftware.htmlunit.util.EncodingSniffer - Encoding found in HTTP headers: 'UTF-8'.
+13:42:33.052 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgForeignObject to SVGForeignObjectElement
+13:42:33.053 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDiffuseLighting to SVGFEDiffuseLightingElement
+13:42:33.054 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeygen to HTMLSpanElement
+13:42:33.056 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSpan to HTMLSpanElement
+13:42:33.057 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeColorMatrix to SVGFEColorMatrixElement
+13:42:33.058 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMarquee to HTMLDivElement
+13:42:33.060 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDivision to HTMLDivElement
+13:42:33.061 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTime to HTMLTimeElement
+13:42:33.062 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDistantLight to SVGFEDistantLightElement
+13:42:33.065 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrameSet to HTMLFrameSetElement
+13:42:33.067 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOption to HTMLOptionElement
+13:42:33.076 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFlood to SVGFEFloodElement
+13:42:33.076 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBase to HTMLBaseElement
+13:42:33.077 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMap to HTMLMapElement
+13:42:33.078 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSelect to HTMLSelectElement
+13:42:33.078 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMetadata to SVGMetadataElement
+13:42:33.080 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgUse to SVGUseElement
+13:42:33.080 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHorizontalRule to HTMLHRElement
+13:42:33.081 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgRadialGradient to SVGRadialGradientElement
+13:42:33.082 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMergeNode to SVGFEMergeNodeElement
+13:42:33.082 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTemplate to HTMLTemplateElement
+13:42:33.083 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDirectory to HTMLDirectoryElement
+13:42:33.088 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlForm to HTMLFormElement
+13:42:33.088 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOutput to HTMLOutputElement
+13:42:33.089 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnorderedList to HTMLUListElement
+13:42:33.090 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncA to SVGFEFuncAElement
+13:42:33.090 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to External
+13:42:33.091 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlVideo to HTMLVideoElement
+13:42:33.092 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineFrame to HTMLIFrameElement
+13:42:33.092 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to ClientRectList
+13:42:33.093 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgTextPath to SVGTextPathElement
+13:42:33.094 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBreak to HTMLBRElement
+13:42:33.094 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentFragment to DocumentFragment
+13:42:33.095 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeConvolveMatrix to SVGFEConvolveMatrixElement
+13:42:33.096 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to OfflineResourceList
+13:42:33.096 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolygon to SVGPolygonElement
+13:42:33.098 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrame to HTMLFrameElement
+13:42:33.099 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAnchor to HTMLAnchorElement
+13:42:33.099 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenuItem to HTMLMenuItemElement
+13:42:33.105 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgLinearGradient to SVGLinearGradientElement
+13:42:33.106 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComponentTransfer to SVGFEComponentTransferElement
+13:42:33.106 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTitle to HTMLTitleElement
+13:42:33.107 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBackgroundSound to HTMLBGSoundElement
+13:42:33.108 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPath to SVGPathElement
+13:42:33.108 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgEllipse to SVGEllipseElement
+13:42:33.109 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomProcessingInstruction to ProcessingInstruction
+13:42:33.110 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to HTMLOptionsCollection
+13:42:33.111 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComposite to SVGFECompositeElement
+13:42:33.112 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeta to HTMLMetaElement
+13:42:33.112 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMarker to SVGMarkerElement
+13:42:33.113 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgDefs to SVGDefsElement
+13:42:33.114 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDataList to HTMLDataListElement
+13:42:33.117 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTile to SVGFETileElement
+13:42:33.118 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomText to Text
+13:42:33.118 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionList to HTMLDListElement
+13:42:33.121 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFePointLight to SVGFEPointLightElement
+13:42:33.121 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOrderedList to HTMLOListElement
+13:42:33.122 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOptionGroup to HTMLOptGroupElement
+13:42:33.123 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFont to HTMLFontElement
+13:42:33.124 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlPicture to HTMLPictureElement
+13:42:33.131 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlLabel to HTMLLabelElement
+13:42:33.132 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgCircle to SVGCircleElement
+13:42:33.133 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomCDataSection to CDATASection
+13:42:33.134 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlImage to HTMLImageElement
+13:42:33.134 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to CSSGroupingRule
+13:42:33.135 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateTransform to SVGAnimateTransformElement
+13:42:33.135 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMorphology to SVGFEMorphologyElement
+13:42:33.136 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlContent to HTMLContentElement
+13:42:33.136 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFilter to SVGFilterElement
+13:42:33.137 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTextArea to HTMLTextAreaElement
+13:42:33.138 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomComment to Comment
+13:42:33.138 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAltGlyph to SVGAltGlyphElement
+13:42:33.139 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlObject to HTMLObjectElement
+13:42:33.140 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPattern to SVGPatternElement
+13:42:33.141 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBody to HTMLBodyElement
+13:42:33.155 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgTSpan to SVGTSpanElement
+13:42:33.156 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMerge to SVGFEMergeElement
+13:42:33.156 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBlockQuote to HTMLQuoteElement
+13:42:33.157 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineQuotation to HTMLQuoteElement
+13:42:33.158 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInput to HTMLInputElement
+13:42:33.158 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpecularLighting to SVGFESpecularLightingElement
+13:42:33.159 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomAttr to Attr
+13:42:33.160 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumn to HTMLTableColElement
+13:42:33.160 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumnGroup to HTMLTableColElement
+13:42:33.161 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCaption to HTMLTableCaptionElement
+13:42:33.162 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnknownElement to HTMLUnknownElement
+13:42:33.163 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenu to HTMLMenuElement
+13:42:33.163 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInsertedText to HTMLModElement
+13:42:33.164 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDeletedText to HTMLModElement
+13:42:33.165 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlListItem to HTMLLIElement
+13:42:33.171 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to CSSConditionRule
+13:42:33.172 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlStyle to HTMLStyleElement
+13:42:33.173 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmbed to HTMLEmbedElement
+13:42:33.174 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgElement to SVGElement
+13:42:33.174 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMask to SVGMaskElement
+13:42:33.175 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAudio to HTMLAudioElement
+13:42:33.176 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSymbol to SVGSymbolElement
+13:42:33.176 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHtml to HTMLHtmlElement
+13:42:33.177 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to SVGGeometryElement
+13:42:33.177 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlProgress to HTMLProgressElement
+13:42:33.178 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to DOMRect
+13:42:33.179 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to SVGGraphicsElement
+13:42:33.179 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableRow to HTMLTableRowElement
+13:42:33.180 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to Geolocation
+13:42:33.180 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeter to HTMLMeterElement
+13:42:33.181 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlButton to HTMLButtonElement
+13:42:33.187 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading1 to HTMLHeadingElement
+13:42:33.187 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading5 to HTMLHeadingElement
+13:42:33.188 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading2 to HTMLHeadingElement
+13:42:33.189 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading6 to HTMLHeadingElement
+13:42:33.189 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading4 to HTMLHeadingElement
+13:42:33.190 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading3 to HTMLHeadingElement
+13:42:33.190 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlLegend to HTMLLegendElement
+13:42:33.191 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeOffset to SVGFEOffsetElement
+13:42:33.191 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSvg to SVGSVGElement
+13:42:33.192 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFieldSet to HTMLFieldSetElement
+13:42:33.193 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgTitle to SVGTitleElement
+13:42:33.197 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomElement to Element
+13:42:33.198 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgStyle to SVGStyleElement
+13:42:33.198 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgImage to SVGImageElement
+13:42:33.199 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to Console
+13:42:33.200 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to EventTarget
+13:42:33.200 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentType to DocumentType
+13:42:33.201 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSource to HTMLSourceElement
+13:42:33.202 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlParagraph to HTMLParagraphElement
+13:42:33.202 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlApplet to HTMLAppletElement
+13:42:33.203 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSwitch to SVGSwitchElement
+13:42:33.203 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeImage to SVGFEImageElement
+13:42:33.204 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgLine to SVGLineElement
+13:42:33.204 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeGaussianBlur to SVGFEGaussianBlurElement
+13:42:33.205 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSet to SVGSetElement
+13:42:33.206 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTable to HTMLTableElement
+13:42:33.206 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMain to HTMLElement
+13:42:33.207 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlPlainText to HTMLElement
+13:42:33.207 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlExample to HTMLElement
+13:42:33.208 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMark to HTMLElement
+13:42:33.209 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeader to HTMLElement
+13:42:33.209 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoFrames to HTMLElement
+13:42:33.212 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlElement to HTMLElement
+13:42:33.213 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBig to HTMLElement
+13:42:33.213 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCitation to HTMLElement
+13:42:33.214 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSubscript to HTMLElement
+13:42:33.214 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionTerm to HTMLElement
+13:42:33.215 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoScript to HTMLElement
+13:42:33.240 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlS to HTMLElement
+13:42:33.241 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSmall to HTMLElement
+13:42:33.243 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBidirectionalOverride to HTMLElement
+13:42:33.244 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigure to HTMLElement
+13:42:33.247 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionDescription to HTMLElement
+13:42:33.248 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNav to HTMLElement
+13:42:33.251 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinition to HTMLElement
+13:42:33.251 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoEmbed to HTMLElement
+13:42:33.251 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAside to HTMLElement
+13:42:33.251 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFooter to HTMLElement
+13:42:33.252 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAcronym to HTMLElement
+13:42:33.252 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSection to HTMLElement
+13:42:33.252 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigureCaption to HTMLElement
+13:42:33.252 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnderlined to HTMLElement
+13:42:33.252 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlVariable to HTMLElement
+13:42:33.252 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCenter to HTMLElement
+13:42:33.253 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCode to HTMLElement
+13:42:33.253 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmphasis to HTMLElement
+13:42:33.253 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlItalic to HTMLElement
+13:42:33.253 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSample to HTMLElement
+13:42:33.253 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAbbreviated to HTMLElement
+13:42:33.253 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAddress to HTMLElement
+13:42:33.254 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBold to HTMLElement
+13:42:33.260 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrike to HTMLElement
+13:42:33.266 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBaseFont to HTMLElement
+13:42:33.267 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSuperscript to HTMLElement
+13:42:33.268 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlArticle to HTMLElement
+13:42:33.269 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrong to HTMLElement
+13:42:33.273 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlListing to HTMLElement
+13:42:33.274 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoBreak to HTMLElement
+13:42:33.275 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlWordBreak to HTMLElement
+13:42:33.278 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeyboard to HTMLElement
+13:42:33.278 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTeletype to HTMLElement
+13:42:33.280 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTrack to HTMLTrackElement
+13:42:33.283 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgText to SVGTextElement
+13:42:33.284 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgStop to SVGStopElement
+13:42:33.285 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgView to SVGViewElement
+13:42:33.288 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgScript to SVGScriptElement
+13:42:33.295 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlScript to HTMLScriptElement
+13:42:33.296 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMPath to SVGMPathElement
+13:42:33.296 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolyline to SVGPolylineElement
+13:42:33.297 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncG to SVGFEFuncGElement
+13:42:33.297 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncR to SVGFEFuncRElement
+13:42:33.297 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlParameter to HTMLParamElement
+13:42:33.298 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeBlend to SVGFEBlendElement
+13:42:33.298 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgRect to SVGRectElement
+13:42:33.302 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableCell to HTMLTableCellElement
+13:42:33.306 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgDesc to SVGDescElement
+13:42:33.306 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgGroup to SVGGElement
+13:42:33.307 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateMotion to SVGAnimateMotionElement
+13:42:33.307 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnchor to SVGAElement
+13:42:33.307 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimate to SVGAnimateElement
+13:42:33.307 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlLink to HTMLLinkElement
+13:42:33.307 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTurbulence to SVGFETurbulenceElement
+13:42:33.307 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHead to HTMLHeadElement
+13:42:33.308 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDisplacementMap to SVGFEDisplacementMapElement
+13:42:33.309 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlArea to HTMLAreaElement
+13:42:33.316 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableFooter to HTMLTableSectionElement
+13:42:33.326 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableBody to HTMLTableSectionElement
+13:42:33.327 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableHeader to HTMLTableSectionElement
+13:42:33.328 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlData to HTMLDataElement
+13:42:33.330 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgClipPath to SVGClipPathElement
+13:42:33.331 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncB to SVGFEFuncBElement
+13:42:33.334 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlPreformattedText to HTMLPreElement
+13:42:33.335 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpotLight to SVGFESpotLightElement
+13:42:33.335 [main] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCanvas to HTMLCanvasElement
+13:42:33.405 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@5a63f509 testClass = JobsTest, testInstance = wad.jobs.JobsTest@4ae33a11, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6e4784bc testClass = JobsTest, locations = '{}', classes = '{class wad.jobs.JobsApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@7ce6a65d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@29b5cd00, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@69b0fd6f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+13:42:33.564 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+13:42:33.565 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+13:42:33.566 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+13:42:33.570 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+13:42:33.580 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2016-11-15 13:42:35.146  INFO 3209 --- [           main] wad.jobs.JobsTest                        : Starting JobsTest on STELLINA with PID 3209 (started by pieta in /home/pieta/NetBeansProjects/hy-s2016-wepa/W2-17.Jobs)
+2016-11-15 13:42:35.149  INFO 3209 --- [           main] wad.jobs.JobsTest                        : No active profile set, falling back to default profiles: default
+2016-11-15 13:42:35.821  INFO 3209 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7daa61f3: startup date [Tue Nov 15 13:42:35 EET 2016]; root of context hierarchy
+2016-11-15 13:42:40.338  INFO 3209 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$110cca63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-15 13:42:41.907  INFO 3209 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2016-11-15 13:42:41.949  INFO 3209 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-11-15 13:42:41.952  INFO 3209 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2016-11-15 13:42:42.244  INFO 3209 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-11-15 13:42:42.245  INFO 3209 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6444 ms
+2016-11-15 13:42:42.710  INFO 3209 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-15 13:42:42.721  INFO 3209 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-15 13:42:42.723  INFO 3209 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-15 13:42:42.723  INFO 3209 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-15 13:42:42.726  INFO 3209 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-15 13:42:43.984  INFO 3209 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-15 13:42:44.026  INFO 3209 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-15 13:42:44.250  INFO 3209 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2016-11-15 13:42:44.254  INFO 3209 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-11-15 13:42:44.258  INFO 3209 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-11-15 13:42:44.390  INFO 3209 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-11-15 13:42:44.856  INFO 3209 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-11-15 13:42:45.569  INFO 3209 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-11-15 13:42:45.575  INFO 3209 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-11-15 13:42:45.666  INFO 3209 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-11-15 13:42:47.421  INFO 3209 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7daa61f3: startup date [Tue Nov 15 13:42:35 EET 2016]; root of context hierarchy
+2016-11-15 13:42:47.660  INFO 3209 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-15 13:42:47.664  INFO 3209 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-15 13:42:47.772  INFO 3209 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-15 13:42:47.781  INFO 3209 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-15 13:42:47.907  INFO 3209 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-15 13:42:49.762  INFO 3209 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 42212 (http)
+2016-11-15 13:42:49.773  INFO 3209 --- [           main] wad.jobs.JobsTest                        : Started JobsTest in 16.185 seconds (JVM running for 21.163)
+2016-11-15 13:42:50.179  INFO 3209 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-15 13:42:50.180  INFO 3209 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-15 13:42:50.221  INFO 3209 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+]]></system-out>
+  </testcase>
+  <testcase name="canMarkJobDone" classname="wad.jobs.JobsTest" time="0.068">
+    <error message="No element is displayed or enabled. Can&apos;t set a new value.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;STELLINA&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-47-generic&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'STELLINA', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-47-generic', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.fluentlenium.core.domain.FluentListImpl.text(FluentListImpl.java:78)
+	at org.fluentlenium.core.action.FillConstructor.with(FillConstructor.java:39)
+	at wad.jobs.JobsTest.addJob(JobsTest.java:94)
+	at wad.jobs.JobsTest.markJobDone(JobsTest.java:74)
+	at wad.jobs.JobsTest.canMarkJobDone(JobsTest.java:62)
+</error>
+  </testcase>
+  <testcase name="canAddJob" classname="wad.jobs.JobsTest" time="0.066">
+    <error message="No element is displayed or enabled. Can&apos;t set a new value.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;STELLINA&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-47-generic&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'STELLINA', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-47-generic', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.fluentlenium.core.domain.FluentListImpl.text(FluentListImpl.java:78)
+	at org.fluentlenium.core.action.FillConstructor.with(FillConstructor.java:39)
+	at wad.jobs.JobsTest.addJob(JobsTest.java:94)
+	at wad.jobs.JobsTest.canAddJob(JobsTest.java:38)
+</error>
+  </testcase>
+  <testcase name="lastJobsAvailableInFirstTable" classname="wad.jobs.JobsTest" time="0.284">
+    <error message="No element is displayed or enabled. Can&apos;t set a new value.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;STELLINA&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-47-generic&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'STELLINA', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-47-generic', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.fluentlenium.core.domain.FluentListImpl.text(FluentListImpl.java:78)
+	at org.fluentlenium.core.action.FillConstructor.with(FillConstructor.java:39)
+	at wad.jobs.JobsTest.addJob(JobsTest.java:94)
+	at wad.jobs.JobsTest.lambda$addJobs$3(JobsTest.java:85)
+</error>
+  </testcase>
+</testsuite>

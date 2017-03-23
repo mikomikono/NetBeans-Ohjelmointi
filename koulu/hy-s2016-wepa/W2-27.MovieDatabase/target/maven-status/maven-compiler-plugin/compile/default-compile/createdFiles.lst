@@ -1,0 +1,4 @@
+wad/domain/Movie.class
+wad/controller/DefaultController.class
+wad/domain/Actor.class
+wad/MovieDatabaseApplication.class

@@ -1,0 +1,6 @@
+wad/repository/MessageRepository.class
+wad/controller/DefaultController.class
+wad/service/MessageService.class
+wad/domain/Message.class
+wad/controller/MessageController.class
+wad/LastMessagesApplication.class

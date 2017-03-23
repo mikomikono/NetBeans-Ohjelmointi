@@ -1,0 +1,108 @@
+Tehtävä 3: Varastonhallinta (7p)
+
+Kirjoita ohjelma varastojen hallintaan. Ohjelma tarjoaa toiminnot esineiden
+lisäämiseen varastoon, esineen poistamiseen varastosta, varaston sisällön 
+tulostamiseen, sekä esineen etsimiseen varastosta. 
+
+Ohjelman komennot tulee syöttää seuraavassa muodossa:
+
+lisaa (varasto) (esine) -- lisää esineen varastoon
+listaa (varasto) -- listaa kaikki annetun varaston esineet
+hae (varasto) (esine) -- kertoo onko varastossa haettua esinettä
+poista (varasto) (esine) -- poistaa yhden esineen annetusta varastosta
+lopeta -- lopettaa ohjelman suorituksen
+
+Ylläolevassa esimerkissä (varasto) ja (esine) ovat mitä tahansa käyttäjän
+syöttämiä merkkijonoja, joissa ei ole välilyöntejä. Voit olettaa, että käyttäjä
+ei kirjoita varaston tai esineen nimeä koskaan väärin. Jos komentoa ei löydy,
+käyttäjälle tulee kertoa siitä. 
+
+
+Ohjelman esimerkkisuoritus:
+
+Varastonhallinta!
+
+Komennot: 
+  lisaa (varasto) (esine) -- lisää esineen varastoon
+  listaa (varasto) -- listaa kaikki annetun varaston esineet
+  hae (varasto) (esine) -- kertoo onko varastossa haettua esinettä
+  poista (varasto) (esine) -- poistaa yhden esineen annetusta varastosta
+  lopeta -- lopettaa ohjelman suorituksen
+
+
+Syötä komento: 
+> lisaa kellari nauris
+
+Syötä komento: 
+> lisaa kellari nauris
+
+Syötä komento: 
+> listaa kellari
+Listataan varaston kellari sisältö
+	nauris
+	nauris
+
+Syötä komento: 
+> lisaa kellari porkkana
+
+Syötä komento: 
+> listaa kellari
+Listataan varaston kellari sisältö
+	nauris
+	nauris
+	porkkana
+
+Syötä komento: 
+> hae kellari omena
+Esinettä omena ei löydy varastosta kellari
+
+Syötä komento: 
+> hae kellari porkkana
+Esine porkkana löytyy varastosta kellari
+
+Syötä komento: 
+> hae ullakko porkkana
+Esinettä porkkana ei löydy varastosta ullakko
+
+Syötä komento: 
+> poista kellari nauris
+
+Syötä komento: 
+> listaa kellari
+Listataan varaston kellari sisältö
+	nauris
+	porkkana
+
+Syötä komento: 
+> liaa mesta
+Tuntematon komento liaa
+
+Syötä komento: 
+> lopeta
+
+Kiitos!
+
+
+--
+
+
+Huom! Seuraavasta komennosta saattaa olla tässä hyötyä: 
+
+  String syote = "merkkijono";
+  String[] palat = syote.split(" ");
+
+
+
+Pisteytys: 
+
+- Kerrotaan käyttäjälle tuntemattomasta komennosta (jos 
+  käyttäjä syöttää tuntemattoman komennon) 1p
+
+- Esineiden lisääminen varastoon sekä varastossa olevien esineiden listaaminen +2p
+
+- Esineen olemassaolon tarkastaminen varastosta (haku) +2p
+
+- Esineen poistaminen varastosta +2p
+
+- Ohjelma toimii vain yhdellä varastolla tai oletetaan, että kaikki esineet
+  menevät samaan varastoon -4p

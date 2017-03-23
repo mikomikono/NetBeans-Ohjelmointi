@@ -1,0 +1,23 @@
+Tehtävä 3: Yleisin luku
+
+Tehtäväpohjassa on annettuna seuraava metodirunko:
+
+public static int yleisinLuku(ArrayList<Integer> luvut) {
+    return -1;
+}
+
+Täydennä metodin toimintaa siten, että se etsii yleisimmän luvun (luvun, jolla 
+on eniten esiintymiskertoja) parametrina annetusta listasta. Voit olettaa, että 
+yksikään listalla oleva luku ei ole negatiivinen. Voit lisäksi olettaa, että 
+listalla on aina vähintään yksi luku.
+
+Jos listalla on useampia yleisimpiä lukuja, eli useammalla luvulla on sama 
+määrä esiintymiskertoja, joka on samalla suurin esiintymiskerta, voit palauttaa
+minkä tahansa yleisimmän luvun.
+
+Muutamia esimerkkejä:
+
+Jos listalla on luvut [1, 2, 3, 4, 5, 5], yleisin luku on 5.
+Jos listalla on luvut [2, 2, 3, 4, 5, 5], yleisin luku on 2 tai 5.
+Jos listalla on luku [2], yleisin luku on 2. 
+Jos listalla on luvut [1, 2], yleisin luku on 1 tai 2.

@@ -1,0 +1,8 @@
+wad/controller/AirportController.class
+wad/controller/DefaultController.class
+wad/domain/Aircraft.class
+wad/repository/AirportRepository.class
+wad/AirportsAndAirplanesApplication.class
+wad/repository/AircraftRepository.class
+wad/controller/AircraftController.class
+wad/domain/Airport.class

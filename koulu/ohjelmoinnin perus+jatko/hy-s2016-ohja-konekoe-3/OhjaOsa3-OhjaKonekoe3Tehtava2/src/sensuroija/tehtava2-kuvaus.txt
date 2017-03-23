@@ -1,0 +1,88 @@
+Tehtävä 2: Sensuroija (4p)
+
+Tässä tehtävässä luodaan ohjelma, joka lukee käyttäjältä sensuroitavan tiedoston 
+nimen, sensuroitavan merkkijonon, sekä tiedoston, mihin sensuroitu teksti 
+tallennetaan. Ohjelma käy läpi jokaisen sensuroitavan tiedoston rivin ja vaihtaa
+sensuroitavan merkkijonon havaitessa sen kohdalle merkkijonon pituuden verran 
+tähtiä.
+
+Tehtäväpohjassa on ohjelman testaamista varten kolme tiedostoa:
+
+* syote-lyhyt.txt -- 2 riviä
+* syote1.txt -- 5 riviä
+* syote2.txt -- 20 riviä
+
+(Ohjelma voi toki käyttää myös muita tiedostoja, jos niitä on olemassa.)
+
+Ohjelman tulee toimia seuraavasti:
+
+
+Esimerkki 1:
+
+Anna luettavan tiedoston nimi: syote-lyhyt.txt
+Anna sensuroitava sana: strategies
+Anna tiedosto, johon sensuroitu teksti kirjoitetaan: syote-lyhyt-sensuroitu.txt
+
+--
+
+Ohjelman suorituksen jälkeen tiedosto "syote-lyhyt-sensuroitu.txt" on luotu 
+ja se sisältää tekstin:
+
+looping ********** play a 
+role in the outcomes
+
+
+
+Esimerkki 2:
+
+Anna luettavan tiedoston nimi: syote1.txt
+Anna sensuroitava sana: rt
+Anna tiedosto, johon sensuroitu teksti kirjoitetaan: syote-esim-sensuroitu.txt
+
+--
+
+Ohjelman suorituksen jälkeen tiedosto "syote-esim-sensuroitu.txt" on luotu 
+ja se sisältää tekstin:
+
+Integer aliquet quis nunc id viverra Praesent fringilla nibh ut condimentum 
+po**titor odio lorem ullamcorper tellus vel mattis leo quam vel risus Nulla 
+blandit po**titor nibh sed pretium Suspendisse potenti Suspendisse potenti 
+Quisque at pretium lectus Nam tristique lobo**is urna ut sagittis Cras posuere 
+rhoncus iaculis Fusce fermentum imperdiet cursus 
+
+
+
+
+Esimerkki 3:
+
+Anna luettavan tiedoston nimi: olematontiedosto.txt
+Anna sensuroitava sana: kaikki
+Anna tiedosto, johon sensuroitu teksti kirjoitetaan: jemma.txt
+Tiedostoa olematontiedosto.txt ei löydy.
+
+--
+
+Huom! Luokasta FileWriter (tai PrintWriter) on tässä tehtävässä 
+todennäköisesti hyötyä. Käsittele myös ohjelmassa esiintyvät poikkeukset
+järkevästi (älä heitä niitä naiivisti eteenpäin).
+
+--
+
+Pisteytys: 
+
+ - Kerrotaan jos luettavaa tiedostoa ei löydy -- tällöin tiedostoa, johon
+   tulostus olisi pitänyt tehdä ei myöskään saa luoda 0.5p
+
+ - Sensurointi poistaa kaikki annetun merkkijonon esiintymät +1p
+
+ - Sensuroitavassa tekstissä olevat annetun merkkijonon esiintymät muunnetaan
+   tähdiksi -- tähtiä on jokaisessa sensuroitavassa kohdassa annetun merkkijonon
+   pituuden verran +1p
+
+ - Sensuroitu teksti kirjoitetaan käyttäjän syöttämään tiedostoon +1.5p
+
+ - Ohjelmassa ei varauduta mahdollisiin poikkeuksiin (vaan ne esim. 
+   heitetään eteenpäin) -1p
+
+ * Huom! Älä muuta lähdetiedostoa!
+  

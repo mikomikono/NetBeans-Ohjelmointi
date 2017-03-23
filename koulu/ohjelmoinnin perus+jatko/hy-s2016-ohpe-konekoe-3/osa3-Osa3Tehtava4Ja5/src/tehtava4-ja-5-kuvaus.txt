@@ -1,0 +1,113 @@
+Tehtävät 4 ja 5 tehdään yhteiseen ohjelmaan. Ohjelmaa varten ohjelmoidaan kaksi 
+luokkaa opiskelijoiden opintosuoritusrekisteriä varten. Huom! Lue tehtävänanto 
+kokonaan ennen aloitusta! Varmista myös, että käyttämäsi luokkien, metodien ja 
+konstruktorien nimet vastaavat tehtävänannossa esiintyviä nimiä.
+
+
+Kohta 1 / 3.
+
+Tee ensin luokka Kurssisuoritus, joka toimii seuraavan esimerkin osoittamalla 
+tavalla:
+
+public static void main(String[] args) {
+    Kurssisuoritus tira = new Kurssisuoritus("Tira", 2, 5);
+    System.out.println(tira);
+    tira.setArvosana(5);
+    System.out.println(tira);
+    System.out.println("kurssi: " + tira.getKurssi());
+    System.out.println("opintopisteet: " + tira.getOpintopisteet());
+    System.out.println("arvosana: " + tira.getArvosana());
+}
+
+Tulostuu:
+
+Tira 5 op, arvosana: 2
+Tira 5 op, arvosana: 5
+kurssi: Tira
+opintopisteet: 5
+arvosana: 5
+
+Tee siis luokalle
+
+• konstruktori, jolla asetetaan kurssin nimi, arvosana ja opintopistemäärä
+• metodi toString(), joka palauttaa suorituksen tekstiesityksen yo. esimerkin 
+  tapaan muotoiltuna
+• metodit getKurssi(), getOpintopisteet() ja getArvosana(), jotka palauttavat
+  suoritukseen liittyvät tiedot
+• metodi setArvosana(int arvosana), joka asettaa suoritukselle uuden arvosanan.
+
+
+
+Kohta 2 / 3.
+
+Ohjelmoi luokka Opiskelija, joka toimii seuraavan esimerkin mukaisesti:
+
+public static void main(String[] args) {
+    Opiskelija pekka = new Opiskelija("Pekka");
+    pekka.suorita("Tietorakenteet", 2, 8);
+    pekka.suorita("Johdatus yliopistomatematiikkaan", 5, 4);
+    pekka.suorita("Vuorovaikutukset ja kappaleet", 1, 5);
+    System.out.println("opintopistemäärä: " + pekka.opintopisteita());
+    pekka.suoritusote();
+}
+
+Ohjelman tulostus oikein toteutetuilla luokilla on:
+
+opintopistemäärä: 17
+Pekka
+  Tietorakenteet 8 op, arvosana: 2
+  Johdatus yliopistomatematiikkaan 4 op, arvosana: 5
+  Vuorovaikutukset ja kappaleet 5 op, arvosana: 1
+opintopisteitä: 17
+
+Tee siis luokalle
+
+• konstruktori, jolla asetetaan opiskelijan nimi
+• metodi suorita(String kurssi, int arvosana, int opintopisteet), joka lisää 
+  opiskelijalle kurssisuorituksen
+• metodi opintopisteita(), joka palauttaa opiskelijan suoritusten 
+  opintopisteiden summan
+• metodi suoritusote(), joka tulostaa opiskelijan nimen, opiskelijalle lisätyt 
+  suoritukset ja opintopisteiden kokonaismäärän yo. esimerkin tapaan muotoiltuna
+
+Luokan tulee tallettaa opiskelijalle lisättävät suoritukset 
+Kurssisuoritus-olioita sisältävään ArrayListiin!
+
+
+Kohta 3 / 3.
+
+Muokkaa tämän jälkeen luokkaa Opiskelija siten, että opiskelijalla voi olla vain 
+yksi suoritusmerkintä tietyltä kurssilta. Jos opiskelijalle yritetään lisätä 
+suoritusmerkintää kurssilta jolta hänellä on jo suoritus, uutta merkintää ei 
+lisätä. Suoritusmerkintään liittyvä arvosana kuitenkin korotetaan jos se on 
+uudessa suorituksessa korkeampi kuin alkuperäisessä.
+
+Laajennuksen jälkeen ohjelman tulee toimia seuraavasti:
+
+public static void main(String[] args) {
+    Opiskelija pekka = new Opiskelija("Pekka");
+    pekka.suorita("Tietorakenteet", 2, 8);
+    pekka.suorita("Johdatus yliopistomatematiikkaan", 5, 4);
+    pekka.suorita("Vuorovaikutukset ja kappaleet", 1, 5);
+    pekka.suoritusote();
+    pekka.suorita("Tietorakenteet", 1, 8);
+    pekka.suorita("Vuorovaikutukset ja kappaleet", 5, 5);
+    System.out.println("\nuusintakokeiden jälkeen:\n");
+    pekka.suoritusote();
+}
+
+Ohjelman tulostus oikein toteutetuilla luokilla on:
+
+Pekka
+  Tietorakenteet 8 op, arvosana: 2
+  Johdatus yliopistomatematiikkaan 4 op, arvosana: 5
+  Vuorovaikutukset ja kappaleet 5 op, arvosana: 1
+opintopisteitä: 17
+
+uusintakokeiden jälkeen:
+
+Pekka
+  Tietorakenteet 8 op, arvosana: 2
+  Johdatus yliopistomatematiikkaan 4 op, arvosana: 5
+  Vuorovaikutukset ja kappaleet 5 op, arvosana: 5
+opintopisteitä: 17

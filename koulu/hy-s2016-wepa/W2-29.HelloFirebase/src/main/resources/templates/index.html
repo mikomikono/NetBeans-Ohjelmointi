@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Hello Firebase</title>
+    </head>
+
+    <body>
+        <h1>Hello Firebase</h1>
+
+        <ul>
+            <li th:each="item : ${items}" th:text="${item.name}">item name</li>
+        </ul>
+
+        <h2>Add a new item</h2>
+
+        <form action="/" method="POST">
+            <span>Name:</span>
+            <input type="text" name="name"/>
+            <input type="submit" value="Add!"/>
+        </form>
+    </body>
+</html>

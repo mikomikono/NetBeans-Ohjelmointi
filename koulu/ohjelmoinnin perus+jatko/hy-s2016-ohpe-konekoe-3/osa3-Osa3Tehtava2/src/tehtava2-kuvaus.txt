@@ -1,0 +1,42 @@
+Tehtävä 2: Tähdillä rajattu neliö
+
+Tee ohjelma, joka lukee käyttäjältä luvun ja tulostaa sen perusteella tähdillä
+rajatun neliön. Voit olettaa, että käyttäjä syöttää luvun ja että syötetyn luvun 
+arvo on vähintään yksi. 
+
+Alla esimerkkitulosteita. 
+
+
+Esimerkki 1:
+
+Anna luku: 5
+*****
+*   *
+*   *
+*   *
+*****
+
+
+Esimerkki 2:
+
+Anna luku: 1
+*
+
+
+Esimerkki 3:
+
+Anna luku: 2
+**
+**
+
+
+Esimerkki 4:
+
+Anna luku: 7
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*******

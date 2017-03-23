@@ -1,0 +1,42 @@
+Tehtävä 1: Tiedoston lukeminen ja poikkeukset (5p)
+
+Kirjoita ohjelma joka kysyy käyttäjältä tiedoston nimen ja tulostaa tiedostossa
+olevien sanojen sekä uniikkien sanojen lukumäärän. Voit olettaa, että 
+tiedostossa on vain sanoja (tiedostossa ei ole esimerkiksi pisteitä tai 
+pilkkuja), ja että jokaisella tiedoston rivillä voi olla nollasta äärettömään 
+määrään sanoja.
+
+Jos tiedostoa ei löydy, ilmoita siitä erikseen. Kysy tällöin luettavan tiedoston
+nimeä uudestaan.
+
+Käsiteltävässä tiedostossa saattaa olla sanoja, jotka sisältävät sekä isoja että 
+pieniä kirjaimia. Käsittele kaikki sanat kuitenkin niin, että ne ovat vain 
+pienillä kirjaimilla kirjoitettu (tee tarvittaessa muunnos).
+
+Ohjelman tulee käynnistyä kun luokan Tehtava1 main-metodi käynnistetään. Metodi
+main _ei saa_ heittää poikkeusta. Tehtäväpohjassa on mukana data.txt -tiedosto
+(voit tarkastella sitä Files-välilehdeltä -- jos välilehteä ei näy, saat sen
+näkyville valitsemalla Window -> Files).
+
+
+Esimerkkitulostus:
+
+Anna analysoitavan tiedoston nimi:
+dat.txt
+Tiedostoa dat.txt ei löydy.
+
+Anna analysoitavan tiedoston nimi:
+data.txt
+
+Analysoidaan tiedostoa data.txt
+
+Sanoja: 200
+Uniikkeja: 114
+
+
+--
+
+Pisteytys: 
+- Tiedoston puuttumisesta ilmoittaminen 1p
+- Sanojen lukumäärän laskeminen ja ilmoittaminen 2p
+- Uniikkien sanojen lukumäärän laskeminen ja ilmoittaminen 2p

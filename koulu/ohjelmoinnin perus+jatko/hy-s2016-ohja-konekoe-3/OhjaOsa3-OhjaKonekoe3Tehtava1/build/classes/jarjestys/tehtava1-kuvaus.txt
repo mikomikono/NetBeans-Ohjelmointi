@@ -1,0 +1,116 @@
+Tehtävä 1: Kirjat järjestykseen (4p)
+
+Kirjoita ohjelma, joka lukee käyttäjältä kirjoja, joista jokaisella on nimi 
+ja julkaisuvuosi. Käyttäjä syöttää tyhjän nimen kun hän on syöttänyt kaikki
+kirjansa ohjelmaan. Ohjelma kysyy tämän jälkeen käyttäjältä kirjojen 
+tulostusjärjestystä. Käyttäjälle tulee antaa kolme vaihtoehtoa
+
+(1) nimi -- kirjat tulostetaan nimen mukaan järjestettynä.
+
+(2) vuosi -- kirjat tulostetaan julkaisuvuoden mukaan järjestettynä.
+
+(3) molemmat -- kirjat tulostetaan nimen ja julkaisuvuoden mukaan järjestettynä.
+                Järjestäminen tapahtuu ensisijaisesti nimen perusteella, jonka
+                jälkeen (jos kahden kirjan nimi on sama) samannimiset kirjat 
+                järjestetään julkaisuvuoden perusteella.
+
+Tämän jälkeen ohjelman suoritus loppuu.
+
+--
+
+Esimerkki 1:
+
+Syötä kirjan nimi, tyhjä lopettaa: Aapinen
+Syötä julkaisuvuosi: 1990
+Syötä kirjan nimi, tyhjä lopettaa: Sorsanen
+Syötä julkaisuvuosi: 1991
+Syötä kirjan nimi, tyhjä lopettaa: Kukkonen
+Syötä julkaisuvuosi: 1989
+Syötä kirjan nimi, tyhjä lopettaa: 
+
+Kiitos!
+
+Missä järjestyksessä kirjat tulostetaan?
+  nimi -- nimen mukaan järjestettynä
+  vuosi -- julkaisuvuoden mukaan järjestettynä
+  molemmat -- nimen ja julkaisuvuoden mukaan järjestettynä
+
+> nimi
+
+Kirjat järjestyksessä:
+  Aapinen (1990)
+  Kukkonen (1989)
+  Sorsanen (1991)
+
+
+--
+
+Esimerkki 2:
+
+Syötä kirjan nimi, tyhjä lopettaa: Aapinen
+Syötä julkaisuvuosi: 1990
+Syötä kirjan nimi, tyhjä lopettaa: Sorsanen
+Syötä julkaisuvuosi: 1991
+Syötä kirjan nimi, tyhjä lopettaa: Kukkonen
+Syötä julkaisuvuosi: 1989
+Syötä kirjan nimi, tyhjä lopettaa: 
+
+Kiitos!
+
+Missä järjestyksessä kirjat tulostetaan?
+  nimi -- nimen mukaan järjestettynä
+  vuosi -- julkaisuvuoden mukaan järjestettynä
+  molemmat -- nimen ja julkaisuvuoden mukaan järjestettynä
+
+> vuosi
+
+Kirjat järjestyksessä:
+  Kukkonen (1989)
+  Aapinen (1990)
+  Sorsanen (1991)
+
+
+--
+
+Esimerkki 3:
+
+
+Syötä kirjan nimi, tyhjä lopettaa: Aapinen
+Syötä julkaisuvuosi: 1989
+Syötä kirjan nimi, tyhjä lopettaa: Kukkonen
+Syötä julkaisuvuosi: 1995
+Syötä kirjan nimi, tyhjä lopettaa: Aapinen
+Syötä julkaisuvuosi: 2001
+Syötä kirjan nimi, tyhjä lopettaa: Kukkonen
+Syötä julkaisuvuosi: 1987
+Syötä kirjan nimi, tyhjä lopettaa: 
+
+Kiitos!
+
+Missä järjestyksessä kirjat tulostetaan?
+  nimi -- nimen mukaan järjestettynä
+  vuosi -- julkaisuvuoden mukaan järjestettynä
+  molemmat -- nimen ja julkaisuvuoden mukaan järjestettynä
+
+> molemmat
+
+Kirjat järjestyksessä:
+  Aapinen (1989)
+  Aapinen (2001)
+  Kukkonen (1987)
+  Kukkonen (1995)
+
+
+
+--
+
+Pisteytys: 
+
+ - Ohjelma järjestää syötetyt kirjat pyydettäessä nimen perusteella 
+   ja tulostaa ne 1p
+
+ - Ohjelma järjestää syötetyt kirjat pyydettäessä julkaisuvuoden 
+   perusteella ja tulostaa ne +1p
+
+ - Ohjelma järjestää syötetyt kirjat pyydettäessä nimen ja 
+   julkaisuvuoden perusteella ja tulostaa ne +2p

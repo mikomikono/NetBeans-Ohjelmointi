@@ -1,0 +1,62 @@
+Tehtävä 2: Kirjalistaus (5p)
+
+Tee ohjelma, joka lukee käyttäjältä kirjoja ja niiden minimikohdeikiä. 
+Minimikohdeiällä tarkoitetaan pienintä ikää vuosina, jolle kyseistä kirjaa 
+suositellaan.
+
+Ohjelma kysyy uusia kirjoja kunnes käyttäjä syöttää tyhjän merkkijonon kirjan
+nimen kohdalla (eli painaa rivinvaihtoa).
+
+Tämän jälkeen ohjelma tulostaa kirjojen määrän ja kirjat minimikohdeiät mukaan
+järjestettynä. Jos kahdella kirjalla on sama minimikohdeikä, tulee nämä kirjat
+järjestää aakkosjärjestykseen. 
+
+
+
+Esimerkki 1:
+
+Syötä kirjan nimi, tyhjä lopettaa: Kurkkaa kulkuneuvot
+Syötä kirjan pienin kohdeikä: 0
+
+Syötä kirjan nimi, tyhjä lopettaa: Soiva tuutulaulukirja
+Syötä kirjan pienin kohdeikä: 0
+
+Syötä kirjan nimi, tyhjä lopettaa: Lunta tupaan
+Syötä kirjan pienin kohdeikä: 12
+
+Syötä kirjan nimi, tyhjä lopettaa: Litmanen 10
+Syötä kirjan pienin kohdeikä: 10
+
+Syötä kirjan nimi, tyhjä lopettaa:
+
+
+Yhteensä 4 kirjaa.
+
+Kirjat:
+  Kurkkaa kulkuneuvot (0 vuotiaille ja vanhemmille)
+  Soiva tuutulaulukirja (0 vuotiaille ja vanhemmille)
+  Litmanen 10 (10 vuotiaille ja vanhemmille)
+  Lunta tupaan (12 vuotiaille ja vanhemmille)
+
+
+
+Esimerkki 2:
+
+Syötä kirjan nimi, tyhjä lopettaa: Oma maa mansikka
+Syötä kirjan pienin kohdeikä: 0
+
+Syötä kirjan nimi, tyhjä lopettaa: Litmanen 10
+Syötä kirjan pienin kohdeikä: 10
+
+Syötä kirjan nimi, tyhjä lopettaa: Kikattava kakkiainen
+Syötä kirjan pienin kohdeikä: 0
+
+Syötä kirjan nimi, tyhjä lopettaa:
+
+
+Yhteensä 3 kirjaa.
+
+Kirjat:
+  Kikattava kakkiainen (0 vuotiaille ja vanhemmille)
+  Oma maa mansikka (0 vuotiaille ja vanhemmille)
+  Litmanen 10 (10 vuotiaille ja vanhemmille)

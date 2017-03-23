@@ -1,0 +1,49 @@
+Tehtävä 2:  Mittausasemat ja mittaukset (6p)
+
+Kirjoita ohjelma, joka lukee käyttäjältä mittauspisteitä ja näissä 
+mittauspisteissä tehtyjä mittauksia. Kun mittauspisteet ja mittaukset on 
+syötetty (käyttäjä syöttää tyhjän mittauspisteen nimen), ohjelma kertoo 
+jokaiseen mittauspisteeseen liittyvien mittausten keskiarvon sekä lukumäärän.
+
+Käyttäjältä tulee kysyä aina ensin mittauspiste, jonka jälkeen annetaan mittaus.
+Mittaukset annetaan kokonaislukuina. 
+
+Ohjelman tulee käynnistyä kun luokan Tehtava2 main-metodi suoritetaan. Toteuta
+tarvitsemasi luokat pakkaukseen "asemat".
+
+
+Ohjelman tulostusesimerkki:
+
+
+Syötä  mittauspisteen nimi, tyhjä lopettaa: kumpula
+Syötä mittaus: 3
+
+Syötä  mittauspisteen nimi, tyhjä lopettaa: kumpula
+Syötä mittaus: 4
+
+Syötä  mittauspisteen nimi, tyhjä lopettaa: rautatientori
+Syötä mittaus: 2
+
+Syötä  mittauspisteen nimi, tyhjä lopettaa: malmi
+Syötä mittaus: 6
+
+Syötä  mittauspisteen nimi, tyhjä lopettaa: malmi
+Syötä mittaus: 2
+
+Syötä  mittauspisteen nimi, tyhjä lopettaa: 
+
+Kiitos!
+
+Mittaustulokset
+  Piste kumpula, keskimittaus 3.5, mittauksia: 2
+  Piste malmi, keskimittaus 4.0, mittauksia: 2
+  Piste rautatientori, keskimittaus 2.0, mittauksia: 1
+
+
+--
+
+Pisteytys: 
+ - Pystyy käsittelemään yhden mittauspisteen mittaukset sekä ilmoittamaan
+   siihen liittyvien mittausten keskiarvon ja lukumäärän 2p
+ - Pystyy käsittelemään lähes rajoittamattoman määrän asemia 4p
+

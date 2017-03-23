@@ -1,0 +1,36 @@
+Tehtävä 1: Muunnoskone (4p)
+
+Toteuta ohjelma, joka kysyy käyttäjältä pituutta (metreissä) kuvaavaa 
+kokonaislukua ja muuntaa annetun luvun virstoiksi, peninkulmiksi ja 
+poronkusemiksi. Käytä seuraavia Wikipedian antamia lukuja muunnoksessa:
+
+* Virsta on vanha venäläinen pituusmitta (1066,80 metriä)
+* Peninkulma tarkoittaa koiran haukun pisintä kantamaa (10 kilometriä eli 10000 metriä)
+* Poronkusema on matka, jonka ajoporoa voi ajaa taukojen välillä (7,5 kilometriä eli 7500 metriä). 
+
+Jos käyttäjä syöttää negatiivisen luvun, älä tulosta muunnoksia. Ilmoita tällöin
+ettei muunnoksia tehdä.
+
+Alla esimerkkitulostuksia. 
+
+Esimerkki 1:
+
+Metrejä: -1
+Mitta oli negatiivinen, ei muunnoksia.
+
+
+Esimerkki 2:
+
+Metrejä: 2500
+Muunnos virstoiksi: 2.3434570678665168
+Muunnos peninkulmiksi: 0.25
+Muunnos poronkusemiksi: 0.3333333333333333
+
+
+Esimerkki 3:
+
+Metrejä: 22500
+Muunnos virstoiksi: 21.09111361079865
+Muunnos peninkulmiksi: 2.25
+Muunnos poronkusemiksi: 3.0
+

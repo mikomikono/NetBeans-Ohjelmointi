@@ -1,0 +1,60 @@
+Tehtävä 1: Kolmen viimeksi syötetyn luvun keskiarvo
+
+Tee ohjelma, joka lukee käyttäjältä lukuja kunnes käyttäjä syöttää nollan tai
+negatiivisen luvun. Kun käyttäjä syöttää nollan tai negatiivisen luvun, lukujen
+lukeminen lopetetaan. Tämän jälkeen ohjelma tulostaa _kolmen viimeksi luetun_
+luvun keskiarvon tai merkkijonon "Ei tarpeeksi lukuja", jos käyttäjä ei syöttänyt
+tarpeeksi lukuja. 
+
+Huom! Syötteen loppua ilmaisevaa nollaa tai negatiivista lukua
+ei tule ottaa huomioon keskiarvon laskemisessa. Tehtävässä kannattanee hyödyntää
+ArrayListiä.
+
+
+Alla esimerkkitulosteita. 
+
+
+Esimerkki 1:
+
+Syötä lukuja, nolla tai negatiivinen lopettaa lukemisen.
+4
+3
+2
+1
+0
+Keskiarvo: 2.0
+
+
+Esimerkki 2:
+
+Syötä lukuja, nolla tai negatiivinen lopettaa lukemisen.
+1
+1
+1
+2
+2
+3
+3
+3
+-1
+Keskiarvo: 3.0
+
+
+Esimerkki 3:
+
+Syötä lukuja, nolla tai negatiivinen lopettaa lukemisen.
+1
+2
+-1
+Ei tarpeeksi lukuja.
+
+
+
+Esimerkki 4:
+
+Syötä lukuja, nolla tai negatiivinen lopettaa lukemisen.
+1
+111
+14
+0
+Keskiarvo: 42.0

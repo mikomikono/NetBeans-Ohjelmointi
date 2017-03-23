@@ -1,0 +1,88 @@
+Tehtävä 3: Perinnän ja rajapintojen demonstrointia (4p)
+
+Tässä tehtävässä demonstroit perinnän ja rajapintojen käyttöä. Toteuta kaikki 
+luokat ja rajapinnat pakkaukseen perintaa.
+
+(1) Toteuta abstrakti luokka Elain. Luokalla Elain on konstruktori, jolle 
+annetaan parametrina eläimen nimi. Luokalla Elain on lisäksi parametrittomat 
+metodit syo ja nuku, jotka eivät palauta arvoa (void), sekä parametriton metodi 
+getNimi, joka palauttaa eläimen nimen. 
+
+Metodin nuku tulee tulostaa "(nimi) nukkuu" ja metodin syo tulee tulostaa 
+"(nimi) syo". Tässä (nimi) on eläimelle annettu nimi.
+
+
+(2) Toteuta luokka Koira, joka perii luokan Elain. Luokalla Koira tulee olla 
+parametrillinen konstruktori, jolla luotavalle koiraoliolle voi antaa nimen. 
+Tämän lisäksi koiralle tulee olla parametriton konstruktori, jolla koiran 
+nimeksi tulee "Koira" sekä parametriton metodi hauku, joka ei palauta arvoa 
+(void). Koiralla tulee olla myös metodit syo ja nuku kuten edellisessä osassa. 
+
+Hyödynnä perintää mahdollisimman paljon! 
+
+
+Alla on esimerkki luokan Koira toiminnasta:
+
+Koira koira = new Koira();
+koira.hauku();
+koira.syo();
+
+Koira vuffe = new Koira("Vuffe");
+vuffe.hauku();
+
+Tulostus:
+
+Koira haukkuu
+Koira syo
+Vuffe haukkuu
+
+
+(3) Toteuta luokka Kissa, joka perii luokan Elain. Luokalla Kissa tulee olla 
+parametrillinen konstruktori, jolla luotavalle kissaoliolle voi antaa nimen. 
+Tämän lisäksi kissalle tulee olla parametriton konstruktori, jolla kissan 
+nimeksi tulee "Kissa" sekä parametriton metodi mourua, joka ei palauta arvoa 
+(void). Kissalla tulee olla myös metodit syo ja nuku kuten ensimmäisessä osassa. 
+
+Hyödynnä perintää mahdollisimman paljon! 
+
+Alla on esimerkki luokan Kissa toiminnasta:
+
+
+Kissa kissa = new Kissa();
+kissa.mourua();
+kissa.syo();
+
+Kissa karvinen = new Kissa("Karvinen");
+karvinen.mourua();
+
+Tulostus:
+
+Kissa mouruaa
+Kissa syo
+Karvinen mouruaa
+
+
+(4) Luo rajapinta Aanteleva, joka maarittelee parametrittoman metodin aantele, 
+joka ei palauta arvoa (void). Toteuta rajapinta luokissa Koira että Kissa. 
+Rajapinnan tulee hyödyntää aiemmin määriteltyjä hauku ja mourua -metodeja.
+
+Alla on esimerkki toiminnasta:
+
+Aanteleva aanteleva = new Koira();
+aanteleva.aantele();
+
+Tulostus:
+
+Koira haukkuu
+
+
+--
+
+Pisteytys: 
+
+ - Abstrakti luokka Elain sekä sen toiminnallisuudet 1p
+ - Koira sekä sen toiminnallisuus 1p
+ - Kissa sekä sen toiminnallisuus 1p
+ - Rajapinta Aanteleva sekä sen toteutus 1p
+
+ - Miinusta jos perintää ei hyödynnetä

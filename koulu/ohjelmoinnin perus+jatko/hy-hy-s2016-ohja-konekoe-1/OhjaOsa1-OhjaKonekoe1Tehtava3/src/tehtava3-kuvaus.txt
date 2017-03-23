@@ -1,0 +1,101 @@
+Tehtävä 3: Tilisiirtoja (6p)
+
+Kirjoitetaan ohjelma, jota käytetään tilien hallintaan. Ohjelma kysyy ensin 
+uusia tilejä (tilinumeroita) ja niiden saldoja kunnes käyttäjä syöttää tyhjän 
+merkkijonon tilinumeron kohdalla (eli painaa rivinvaihtoa).
+
+Jokaisella tilillä on tilinumero (merkkijono) ja saldo (kokonaisluku). 
+
+Kun käyttäjä on syöttänyt tilit, aloitetaan tilien hallinta. Tilien hallintaan
+kuuluu 3 komentoa: tilisiirron tekeminen ("siirto"), tilien tulostaminen 
+("tulosta") ja ohjelman lopettaminen ("lopeta").
+
+Komento "siirto":
+
+Jos käyttäjä valitsee tilisiirron, käyttäjältä kysytään ensin lähdetiliä, sitten
+kohdetiliä, ja lopulta siirrettävää summaa. Tämän jälkeen ohjelma siirtää halutun
+summan lähdetililtä kohdetilille. Voit olettaa, että siirrettävät summat ovat
+aina kokonaislukuja, ja että tilien saldot saavat mennä negatiiviselle. Kun
+tilisiirto on tehty, käyttäjältä kysytään seuraavaa komentoa.
+
+Komento "tulosta":
+
+Jos käyttäjä valitsee tulostuskomennon, tilit ja niiden saldot tulostetaan. 
+Jokainen tili tulee tulostaa omalle rivilleen. Kun tilit on tulostettu,
+käyttäjältä kysytään seuraavaa komentoa. 
+
+Komento "lopeta":
+
+Jos käyttäjä valitsee lopetuskomennon, ohjelman suoritus lopetetaan.
+
+Muu komento:
+
+Jos käyttäjä valitsee tuntemattoman komennon, hänelle ilmoitetaan ettei komento
+ole tunnettu. Tämän jälkeen käyttäjältä kysytään seuraavaa komentoa.
+
+
+Esimerkkitulostus:
+
+
+Syötä tilinumero tai tyhjä jos valmis: 02255
+Syötä saldo: 720
+
+Syötä tilinumero tai tyhjä jos valmis: 01225
+Syötä saldo: 100
+
+Syötä tilinumero tai tyhjä jos valmis: 33100
+Syötä saldo: 1600
+
+Syötä tilinumero tai tyhjä jos valmis: 
+
+Tilit syötetty, yhteensä 3.
+
+
+Komennot: 
+siirto - tee tilisiirto
+tulosta - tulosta tilit
+lopeta - lopeta
+> tulosta
+
+Tulostetaan tilit
+  33100 (saldo: 1600)
+  02255 (saldo: 720)
+  01225 (saldo: 100)
+
+
+Komennot: 
+siirto - tee tilisiirto
+tulosta - tulosta tilit
+lopeta - lopeta
+> siirtp
+Tuntematon komento: siirtp
+
+Komennot: 
+siirto - tee tilisiirto
+tulosta - tulosta tilit
+lopeta - lopeta
+> siirto
+
+Miltä tililtä siirretään: 33100
+Mille tilille siirretään: 02255
+Paljonko? 1200
+
+Komennot: 
+siirto - tee tilisiirto
+tulosta - tulosta tilit
+lopeta - lopeta
+> tulosta
+
+Tulostetaan tilit
+  33100 (saldo: 400)
+  02255 (saldo: 1920)
+  01225 (saldo: 100)
+
+
+Komennot: 
+siirto - tee tilisiirto
+tulosta - tulosta tilit
+lopeta - lopeta
+> lopeta
+
+Kiitos!
